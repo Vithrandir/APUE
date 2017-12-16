@@ -12,8 +12,11 @@ int main(int argc, char const *argv[])
 	int b;
 	b = open("test.c",O_RDONLY);
 	printf("b == %d\n",b);
-	int d;
-	d = close(3);
-	printf("%d\n",d);
+	int e;
+	e = lseek(4,1,SEEK_CUR);
+	printf("%d\n",e);
+	// int d;
+	// d = close(3);
+	// printf("%d\n",d);
 	return 0;
 }
